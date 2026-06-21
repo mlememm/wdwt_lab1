@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання столику | Ресторан "Татуй"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ресторан "Татуй"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="booking.html" aria-current="page">Бронювання</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Забронювати столик</h2>
+            <p>Заповніть форму нижче, щоб зарезервувати місце у нашому ресторані.</p>
+            
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Контактні дані</legend>
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <br><br>
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0501234567" required aria-required="true">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Деталі бронювання</legend>
+                    <label for="guests">Кількість осіб:</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" value="2" required aria-required="true">
+                    <br><br>
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required aria-required="true">
+                    <br><br>
+                    <label for="time">Час:</label>
+                    <input type="time" id="time" name="time" min="10:00" max="22:00" required aria-required="true">
+                </fieldset>
+                
+                <br>
+                <button type="submit">Підтвердити бронювання</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>м. Кам'янець-Подільський, вул. Соборна, 12</p>
+        </address>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+:root {
+	--bg-dark: #021026;
+	--bg-mid: #0b3a66;
+	--bg-light: #0e4f8a;
+	--accent: #4da3ff;
+	--text: #eaf6ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	color: var(--text);
+	background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-mid) 60%, var(--bg-light) 100%);
+	background-attachment: fixed;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: background 0.45s ease;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+/* Кнопки: мягкие углы, лёгкие тени и плавные ховеры */
+button, .btn, input[type="button"], input[type="submit"], a.button {
+	display: inline-block;
+	padding: 0.6rem 1rem;
+	font-size: 1rem;
+	color: var(--text);
+	background: linear-gradient(180deg, rgba(77,163,255,0.12), rgba(77,163,255,0.06));
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 12px;
+	cursor: pointer;
+	transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+	box-shadow: 0 6px 18px rgba(4,18,36,0.45);
+	text-decoration: none;
+}
+
+button:focus, .btn:focus, a.button:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(77,163,255,0.10);
+}
+
+button:hover, .btn:hover, a.button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 24px rgba(4,18,36,0.55);
+	background: linear-gradient(180deg, rgba(77,163,255,0.22), rgba(77,163,255,0.10));
+}
+
+/* Варианты кнопок */
+.btn--primary {
+	background: linear-gradient(180deg, #1e90ff 0%, #1074d8 100%);
+	border: none;
+	color: #ffffff;
+	box-shadow: 0 8px 30px rgba(16,116,216,0.35);
+	border-radius: 12px;
+}
+
+.btn--secondary {
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.12);
+	border-radius: 10px;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+/* Утилитарные мелочи */
+.card {
+	background: rgba(255,255,255,0.03);
+	border-radius: 12px;
+	padding: 1rem;
+	box-shadow: 0 4px 20px rgba(2,10,20,0.45);
+}
+

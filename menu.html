@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню | Ресторан "Татуй"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ресторан "Татуй"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html" aria-current="page">Меню</a></li>
+                <li><a href="booking.html">Бронювання</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Наше меню</h2>
+        
+        <section aria-labelledby="main-courses">
+            <h3 id="main-courses">Основні страви</h3>
+            <article>
+                <h4>Стейк з мармурової яловичини</h4>
+                <p>Ніжний стейк просмаження Medium Rare з овочами гриль.</p>
+                <p><strong>Ціна:</strong> <data value="450">450 грн</data></p>
+                <span role="img" aria-label="Увага: Містить гострі спеції">🌶️</span>
+            </article>
+            <article>
+                <h4>Форель запечена з травами</h4>
+                <p>Річкова форель із лимонно-вершковим соусом.</p>
+                <p><strong>Ціна:</strong> <data value="320">320 грн</data></p>
+                <span role="img" aria-label="Увага: Містить лактозу">🥛</span>
+            </article>
+        </section>
+
+        <section aria-labelledby="desserts">
+            <h3 id="desserts">Десерти</h3>
+            <article>
+                <h4>Шоколадний фондан</h4>
+                <p>Гарячий шоколадний кекс з кулькою ванільного морозива.</p>
+                <p><strong>Ціна:</strong> <data value="150">150 грн</data></p>
+                <span role="img" aria-label="Увага: Містить горіхи та глютен">🥜🌾</span>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>м. Кам'янець-Подільський, вул. Соборна, 12</p>
+        </address>
+    </footer>
+</body>
+</html>
