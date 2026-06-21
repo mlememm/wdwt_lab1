@@ -276,3 +276,43 @@ body > footer {
 padding: 0 1rem;
 }
 }
+
+.feedback-form {
+    padding: 1.5rem;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 18px 40px rgba(2, 10, 20, 0.14);
+    margin-top: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form:focus-within {
+    --input-border: 1px solid #3498db;
+    --focus-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+    background: rgba(77,163,255,0.1);
+    border-color: rgba(77,163,255,0.3);
+}
+
+.form-field {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input:required {
+    border: var(--input-border);
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+input:required:focus {
+    box-shadow: var(--focus-shadow);
+}
+
+input:required:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: var(--error-color);
+}
