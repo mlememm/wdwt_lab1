@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | Ресторан "Татуй"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ресторан "Татуй"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="chef.html">Про шефа</a></li>
+                <li><a href="booking.html">Бронювання</a></li>
+                <li><a href="contact.html" aria-current="page">Контакти</a></li>
+                <li><a href="feedback.html">Відгук</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Контакти</h2>
+            <p>Зв'яжіться з нами для бронювання, групових заходів і запитань.</p>
+
+            <div class="contact-grid" style="display:grid;grid-template-columns:1fr 320px;gap:1.5rem;align-items:start;">
+                <div>
+                    <form id="contactForm" class="feedback-form" action="#" method="POST">
+                        <div class="form-field">
+                            <label for="cName">Ваше ім'я</label>
+                            <input type="text" id="cName" name="cName" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="cEmail">Email</label>
+                            <input type="email" id="cEmail" name="cEmail" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="cPhone">Телефон</label>
+                            <input type="tel" id="cPhone" name="cPhone" placeholder="0501234567">
+                        </div>
+                        <div class="form-field">
+                            <label for="cMessage">Повідомлення</label>
+                            <textarea id="cMessage" name="cMessage" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Надіслати</button>
+                    </form>
+                </div>
+
+                <aside class="portfolio-side-nav">
+                    <h3>Наші контакти</h3>
+                    <address>
+                        <p>м. Кам'янець-Подільський</p>
+                        <p>вул. Соборна, 12</p>
+                        <p>Телефон: <a href="tel:+380501234567">+38 (050) 123-45-67</a></p>
+                        <p>Email: <a href="mailto:info@tatui.ua">info@tatui.ua</a></p>
+                    </address>
+                    <h4>Графік роботи</h4>
+                    <p>Пн–Нд: 10:00 — 22:00</p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            <p>м. Кам'янець-Подільський, вул. Соборна, 12</p>
+        </address>
+    </footer>
+</body>
+</html>

@@ -361,10 +361,12 @@ input:required:invalid:not(:focus):not(:placeholder-shown) {
 }
 
 .portfolio-side-nav {
-    background-color: #f4f4f4;
+    background: rgba(255,255,255,0.06);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     height: fit-content;
+    border: 1px solid rgba(255,255,255,0.08);
+    color: var(--text);
 }
 .portfolio-section {
     height: max(400px, 50vh);
