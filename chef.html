@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфоліо Шефа | Ресторан "Татуй"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Ресторан "Татуй"</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="booking.html">Бронювання</a></li>
+                <li><a href="chef.html" aria-current="page">Про шефа</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="portfolio-grid">
+        
+        <main class="portfolio-content">
+            <section class="portfolio-section" id="about">
+                <h2>Про себе</h2>
+                
+                <div class="about-container">
+                    <div class="about-content">
+                                <picture>
+                                    <source type="image/avif" srcset="images/chefphoto.avif">
+                                    <img src="images/chef-portrait.svg" alt="Шеф-кухар ресторану Татуй" class="chef-photo" width="250" height="250" loading="lazy">
+                                </picture>
+                        <p>Вітаю! Я — головний шеф-кухар ресторану "Татуй". Моя кулінарна подорож розпочалася понад 15 років тому. Я навчався у найкращих кулінарних школах Європи та стажувався в ресторанах із зірками Мішлен. Моя філософія — це повага до локального продукту та сміливість у поєднанні смаків.</p>
+                        <p>Для мене кулінарія — це не просто професія, це мистецтво, через яке я спілкуюся з нашими гостями. Кожна страва у нашому меню розроблена з любов'ю та натхненням.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio-section" id="achievements">
+                <h2>Нагороди та досягнення</h2>
+                <ul>
+                    <li>Переможець національного конкурсу "Золотий Шеф 2024"</li>
+                    <li>Автор книги "Сучасна українська гастрономія"</li>
+                    <li>Зірка від локального гастро-гіда</li>
+                </ul>
+            </section>
+            <section class="portfolio-section" id="gallery">
+                <h2>Галерея страв</h2>
+                <div class="gallery">
+                    <a href="images/chefphoto.avif" target="_blank" rel="noopener noreferrer">
+                        <picture>
+                            <source type="image/avif" srcset="images/chefphoto.avif">
+                            <img src="images/chef-portrait.svg" alt="Портрет шеф-кухаря">
+                        </picture>
+                    </a>
+                    <a href="images/dish1.avif" target="_blank" rel="noopener noreferrer">
+                        <picture>
+                            <source type="image/avif" srcset="images/dish1.avif">
+                            <img src="images/dish-1.svg" alt="Авторська страва">
+                        </picture>
+                    </a>
+                    <a href="images/dish2.avif" target="_blank" rel="noopener noreferrer">
+                        <picture>
+                            <source type="image/avif" srcset="images/dish2.avif">
+                            <img src="images/dish-2.svg" alt="Подача страви">
+                        </picture>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <aside class="portfolio-side-nav">
+            <nav>
+                <h3>Навігація по портфоліо</h3>
+                <ul>
+                    <li><a href="#about">Про себе</a></li>
+                    <li><a href="#achievements">Досягнення</a></li>
+                    <li><a href="#gallery">Галерея страв</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+    </div>
+
+    <footer>
+        <address>
+            <p>м. Кам'янець-Подільський, вул. Соборна, 12</p>
+        </address>
+    </footer>
+</body>
+</html>

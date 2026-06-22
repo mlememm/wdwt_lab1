@@ -7,6 +7,10 @@
 --surface: rgba(255,255,255,0.08);
 --surface-soft: rgba(255,255,255,0.04);
 --border: rgba(255,255,255,0.14);
+    /* Default input/focus/error variables (fallbacks) */
+    --input-border: 1px solid rgba(255,255,255,0.14);
+    --focus-shadow: 0 0 0 4px rgba(77,163,255,0.14);
+    --error-color: #e74c3c;
 }
 
 * {
@@ -315,4 +319,104 @@ input:required:focus {
 
 input:required:invalid:not(:focus):not(:placeholder-shown) {
     border-color: var(--error-color);
+}
+
+.portfolio-grid {
+    display: grid;
+    /* Якщо екран великий - 2 колонки. Якщо місця мало - падає в 1 колонку */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.portfolio-content {
+}
+
+.portfolio-side-nav {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+.portfolio-section {
+    height: max(400px, 50vh);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.about-container {
+    container-type: inline-size;
+    container-name: about-section;
+}
+
+.about-content .chef-photo {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+
+@container about-section (min-width: 500px) {
+    .about-content .chef-photo {
+        float: left;
+        margin: 0 20px 10px 0;
+    }
+    
+    .about-content::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/* Portfolio layout adjustments */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 24px;
+    align-items: start;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-side-nav {
+        order: -1;
+    }
+}
+
+.portfolio-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+.portfolio-content .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.portfolio-content .gallery a {
+    display: block;
+    overflow: hidden;
+}
+
+.portfolio-content .gallery img {
+    transition: transform .25s ease;
+}
+
+.portfolio-content .gallery a:hover img {
+    transform: scale(1.04);
 }
